@@ -25,12 +25,12 @@
  * html
  * scss
  * scss/vendor
-* create a **_theame.scss** partial 
+* create a **_theme.scss** partial 
  * add three color variables
 * create a **base.scss** file 
- * import normailze
- * import \_theame
- * write some styles that use the color variables defined in \_theame
+ * import normalize
+ * import \_theme
+ * write some styles that use the color variables defined in \_theme
 * create a **entry.js**
  * require your **index.html** and force webpack to use the `file-loader`
  * require your **base.scss**
@@ -38,8 +38,8 @@
 
 # Client Functionality
 * create a page with a form and two pre tags
- * one pre tag should have the result of `cowsay.say` with two way data-binding to an input on the form
- * the second pre tag should be populated with what ever the first pretag shows when ever the submit button on the form is triggered
+ * one pre tag should be a preview, showing the result of `cowsay.say` with two way data-binding to an input on the form
+ * the second pre tag should be final view, populated with what ever the first pretag shows when ever the submit button on the form is triggered
  * feel free to add any features or styling you want
 
 # Bonus
