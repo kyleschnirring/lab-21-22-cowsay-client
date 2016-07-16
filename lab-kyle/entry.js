@@ -14,15 +14,15 @@ var app = angular.module('cowsayApp', []);
 // app logic
 
 app.controller('CowsayController', [ '$scope', function($scope){
-  $scope.cowsayText = 'wish i had something better to say';
+  $scope.cowsayText = 'angular rocks';
   $scope.cowsayFile = 'default';
   $scope.say = function(){
-    let text = $scope.cowsayText || 'fill thiz out plz, k thnx :p';
+    let text = $scope.cowsayText || 'Please fill out';
     return cowsay.say({text: text, f: $scope.cowsayFile});
   };
 
   $scope.done = function(){
-    let text = $scope.cowsayText || 'fill thiz out plz, k thnx :p';
+    let text = $scope.cowsayText || 'Fill this out too.';
     $scope.result = cowsay.say({text: text , f: $scope.cowsayFile});
   };
 
